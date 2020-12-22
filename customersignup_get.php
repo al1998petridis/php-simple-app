@@ -38,6 +38,13 @@
 				<?php
 				} else {
 					echo mysqli_error($conn);
+				?>
+				<script>
+					setTimeout(function() {
+						window.location.href="customersignup.html";
+					}, 3000);
+				</script> 	
+				<?php
 				}
 			}
 			else
