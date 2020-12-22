@@ -13,7 +13,7 @@
 	<body>
 		<?php
 			include "config.php";
-			$conn -> select_db("mydb");
+			$conn -> select_db("heroku_ed39a20fb4d6fd8");
 			session_start();
 			
 			if(isset($_POST["username"]) && isset($_POST["password"])){
