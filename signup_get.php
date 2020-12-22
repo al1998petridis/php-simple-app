@@ -16,7 +16,7 @@
 	<body>
 		<?php
 			include "config.php";
-			$conn -> select_db("mydb");
+			$conn -> select_db("heroku_ed39a20fb4d6fd8");
 			
 			$username = $_POST["username"];
 			$password = $_POST["password"];
