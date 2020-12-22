@@ -178,5 +178,8 @@
 			document.getElementById(navname).style.width = "0%";
 		}
 	</script>
+		<div>
+			<p>Created by Group 2.</p>
+		</div>
 	</body>
 </html>

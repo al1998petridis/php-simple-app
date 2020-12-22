@@ -43,7 +43,9 @@
 		font-size: 35px;
 		text-align: center;
 	}
-
+	button{
+		text-align: left;
+	}
 	</style>
 	<body>
 		<div class="header">
@@ -79,7 +81,12 @@
 			<p>Login from <a href="customerlogin.html">here</a> to book a seat !!!<br>Don't have an account, NO PROBLEM!<br>sign up now for free clicking <a href="customersignup.html">here</a>.</p>
 		</div>
 		<div>
-			<button href="index.php">Return to First Page</button>
+			<a href="index.php">
+				<button>Return to First Page</button>
+			</a>
+		</div>
+		<div>
+			<p>Created by Group 2.</p>
 		</div>
 	</body>
 	
