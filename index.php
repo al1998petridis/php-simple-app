@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Secretary's Login Page</title>
+		<title>Very First Page</title>
 	</head>
 	<style>
 		body{
@@ -10,6 +10,7 @@
 			border-radius: 10px;
 			padding: 100px;
 			background-color: lightblue;
+			position: relative;
 			
 		}
 		h1, h2{
@@ -29,25 +30,37 @@
 			border: 2px outset;
 	
 		}
-		form{
-			text-align: center;
-		}
-		
+	
 		button{
 			text-align: center;
 		}
+		div{
+			text-align:center;
+		}
 	</style>
-	<body>
+	<body class="centered">
 		<div>
-		<a href="firstPage.html">firstPage</a>
+			<h1>MyBusApp</h1>
+			<h2>Very First Page</h2>
+		</div>
+			<img src="logo.jpg" alt="Company Logo" width="200" height="200" class="center">
+		<div>
 		</div>
 		<div>
-			<?php
-				echo "Hello";	
-			?>
+			<p>Please choose your identity</p>
 		</div>
 		<div>
-			<a href="config.php">Database Connect</a>
+			<a href="login.html">
+				<button>Secretary</button>
+			</a>
+		</div>
+		<div>
+			<a href="customerFirstPage.php">
+				<button>Customer</button>
+			</a>
+		</div>
+		<div>
+			<p>Created by Group 2.</p>
 		</div>
 	</body>
 </html>
