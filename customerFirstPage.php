@@ -80,7 +80,7 @@
 			<h2>I want to travel with Busdb</h2>
 			<p>Login from <a href="customerlogin.html">here</a> to book a seat !!!<br>Don't have an account, NO PROBLEM!<br>sign up now for free clicking <a href="customersignup.html">here</a>.</p>
 			<a href="index.php">
-				<button>Return to First Page</button>
+				<p style="text-align: center;"><button>Return to First Page</button></p>
 			</a>
 		<div>
 			<p>Created by Group 2.</p>
