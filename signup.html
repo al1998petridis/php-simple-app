@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Secretary's Login Page</title>
+		<title>Secretary Sign Up Page</title>
 	</head>
 	<style>
 		body{
@@ -40,21 +40,19 @@
 	<body class="centered">
 		<div>
 			<h1>MyBusApp</h1>
-			<h2>Secretary's Login Page</h2>
+			<h2>Secretary Sign Up Page</h2>
 		</div>
 			<img src="logo.jpg" alt="Company Logo" width="200" height="200" class="center">
 		<div>
 		</div>
 		<div>
-		<p>Please identify your credentials to use MyBusApp</p>
-			<form action="login.php" method="POST">
+		<p>Create your MyBusApp account</p>
+			<form action="signup_get.php" method="POST">
+				<input type="text" name="firstname" placeholder="First name"><br/>
+				<input type="text" name="lastname" placeholder="Last name"><br/>
 				<input type="text" name="username" placeholder="Username"><br/>
 				<input type="password" name="password" placeholder="Password"><br/>
-				<button type="submit">Login</submit></button>
-				<div>
-					<p>Secretary with no account yet!!!</p>
-					<a href="signup.html">Sign Up</a>
-				</div>
+				<button type="submit">Sign Up</submit></button>
 			</form>
 							
 		</div>
