@@ -38,9 +38,16 @@
 		}
 	</style>
 	<body>
+		<div>
 		<a href="firstPage.html">firstPage</a>
-		<?php
-			echo "Hello";	
-		?>
+		</div>
+		<div>
+			<?php
+				echo "Hello";	
+			?>
+		</div>
+		<div>
+			<a href="config.php">Database Connect</a>
+		</div>
 	</body>
 </html>
