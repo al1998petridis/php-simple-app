@@ -44,7 +44,10 @@
 		text-align: center;
 	}
 	button{
-		text-align: left;
+		text-align: center;
+	}
+	a {
+		text-align: center;
 	}
 	</style>
 	<body>
