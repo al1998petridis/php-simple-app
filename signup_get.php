@@ -1,18 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="stylesheet" href="styles.css">
 		<title>Secretary's Sign Up Page</title>
 	</head>
-	<style>
-		body{
-			font-family: Georgia;
-			border: 4px solid white;
-			border-radius: 10px;
-			padding: 100px;
-			background-color: lightblue;
-			text-align: center		
-		}
-	</style>
 	<body>
 		<?php
 			include "config.php";

@@ -1,15 +1,9 @@
 <!DOCTYPE html>
 <html>
-	<style>
-		body{
-			font-family: Georgia;
-			border: 4px solid white;
-			border-radius: 10px;
-			padding: 100px;
-			background-color: lightblue;
-			text-align: center		
-		}
-	</style>
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<title>Secretary's Login Page</title>
+	</head>
 	<body>
 		<?php
 			include "config.php";

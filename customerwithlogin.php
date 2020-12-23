@@ -1,50 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="stylesheet" href="styles.css">
 		<title>Customer's Page</title>
 	</head>
-	<style>
-	body{
-		background-color: lightblue;
-		box-sizing: border-box;
-		text-align: center;
-	}
-	.header{
-		background-color: lightblue;
-		padding: 20px;
-		text-align: center;
-		color: blue;
-		border: 4px solid white;
-		border-radius: 10px;
-	}
-	h1{
-		text-align: center;
-	}
-	table {
-		text-align: center;
-		background-color: black;
-		color: white;
-		border: 4px solid white;
-		border-radius: 10px;
-		width: 35%;
-		float: left;
-	}
-	th, td {
-		border: 4px solid white;
-		border-collapse: collapse;
-	}
-	
-	p {
-		text-align: center;
-		text-indent: 50px;
-		font-size: 25px;
-	}
-	h2{
-		font-size: 35px;
-		text-align: center;
-	}
-
-	</style>
 	<body>
 		<?php
 			session_start();
