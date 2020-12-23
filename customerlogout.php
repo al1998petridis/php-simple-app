@@ -4,7 +4,7 @@
 		<link rel="stylesheet" href="styles.css">
 		<title>Customer's Logout Page</title>
 	</head>
-	<body>
+	<body class="centered">
 	<?php
 		session_start();
 		unset($_SESSION["username"]);

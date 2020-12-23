@@ -4,7 +4,7 @@
 		<link rel="stylesheet" href="styles.css">
 		<title>Customer's Sign Up Page</title>
 	</head>
-	<body>
+	<body class="centered">
 		<?php
 			include "config.php";
 			$conn -> select_db("heroku_ed39a20fb4d6fd8");
