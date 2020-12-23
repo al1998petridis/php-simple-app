@@ -6,7 +6,7 @@
 		.button {
 			display: block;
 			border-radius: 4px;
-			background-color: blue;
+			background-color: lightblue;
 			border: none;
 			color: white;
 			text-align: center;
@@ -53,7 +53,7 @@
 			z-index: 1;
 			top: 0;
 			left: 0;
-			background-color: blue;
+			background-color: grey;
 			overflow-x: hidden;
 			transition: 0.6s;
 		}
