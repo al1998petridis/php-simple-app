@@ -7,12 +7,13 @@
 	<style>
 	.topnav{
 		padding:0px;
-		background-color: blue;
+		background-color: grey;
 		text-align: center;
+		border-radius: 10px;
 	}
 	
 	.dropbtn {
-		background-color: blue;
+		background-color: grey;
 		color: white;
 		padding: 16px;
 		font-size: 16px;
@@ -27,7 +28,7 @@
 	.dropdown-content {
 		position: absolute;
 		display: none;
-		background-color: blue;
+		background-color: grey;
 		min-width: 160px;
 		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 		z-index: 1;
@@ -46,7 +47,7 @@
 
 	.dropbtn:hover {
 		background-color: white;
-		color: blue;
+		color: grey;
 	}
 	
 	</style>
@@ -101,10 +102,11 @@
 		<div>
 			<p>Create New Reservation</p>
 			<form action="secNewRes.php" method="POST">
-				<input type="text" name="tripID" placeholder="Enter tripID" size=5><br/>
-				<input type="text" name="customerID" placeholder="Enter customerID" size=5><br/>
-				<input type="text" name="price" placeholder="Enter price" size=5><br/>
-				<input type="text" name="seat_num" placeholder="Enter seat number" size=5><br/>
+				<input type="text" name="tripID" placeholder="Enter tripID" size=10><br/>
+				<input type="text" name="customerID" placeholder="Enter customerID" size=10><br/>
+				<input type="text" name="price" placeholder="Enter price" size=10><br/>
+				<input type="text" name="seat_num" placeholder="Enter seat number" size=10><br/>
+				<button type="submit">Submit Reservation</submit></button>
 			</form>
 		</div>
 	</body>
