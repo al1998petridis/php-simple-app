@@ -108,8 +108,10 @@
 				$customerID = $_POST["customerID"];
 				if (isset($tripID))
 					$query = "SELECT * FROM reservation WHERE Trip_tripID = '$tripID'";	
-				else if(isset($customerID))
+				elseif(isset($customerID))
 					$query = "SELECT * FROM reservation WHERE Customer_customerID = '$customerID'";
+				else
+					echo "Please select one of two";
 				$result = mysqli_query($conn, $query);
 				$all_data = array();
 				while ($data = mysqli_fetch_field($result)) {
