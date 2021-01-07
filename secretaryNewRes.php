@@ -103,9 +103,9 @@
 			<p>Create New Reservation</p>
 			<form action="secNewRes.php" method="POST">
 				<input type="text" name="tripID" placeholder="Enter tripID" size=10><br/>
-				<input type="text" name="customerID" placeholder="Enter customerID" size=10><br/>
+				<input type="text" name="customerID" placeholder="Enter customerID" size=20><br/>
 				<input type="text" name="price" placeholder="Enter price" size=10><br/>
-				<input type="text" name="seat_num" placeholder="Enter seat number" size=10><br/>
+				<input type="text" name="seat_num" placeholder="Enter seat number" size=20><br/>
 				<button type="submit">Submit Reservation</submit></button>
 			</form>
 		</div>
