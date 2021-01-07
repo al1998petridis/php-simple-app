@@ -108,11 +108,12 @@
 				$customerID = $_POST["customerID"];
 				if (isset($customerID)){
 					$query = "SELECT * FROM reservation WHERE Trip_tripID = '$customerID'";	
+					$result = mysqli_query($conn, $query);
 				}
 				if (isset($tripID)){
 					$query = "SELECT * FROM reservation WHERE Customer_customerID = '$tripID'";
+					$result = mysqli_query($conn, $query);
 				}
-				$result = mysqli_query($conn, $query);
 				$all_data = array();
 				while ($data = mysqli_fetch_field($result)) {
 					echo '<td>' . $data->name . '</td>';  //get field name for header
