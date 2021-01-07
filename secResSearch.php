@@ -106,13 +106,20 @@
 				$conn -> select_db("heroku_ed39a20fb4d6fd8");
 				$tripID = $_POST["tripID"];
 				$customerID = $_POST["customerID"];
-				if (isset($customerID)){
-					$query = "SELECT * FROM reservation WHERE Trip_tripID = '$customerID'";	
+				if (!empty($customerID) && !empty($tripID)){
+					$query = "SELECT * FROM reservation WHERE Trip_tripID = '$tripID' AND Customer_customerID = '$customerID'";	
 					$result = mysqli_query($conn, $query);
-				} elseif (isset($tripID)){
-					$query = "SELECT * FROM reservation WHERE Customer_customerID = '$tripID'";
+				} elseif (!empty($tripID)){
+					$query = "SELECT * FROM reservation WHERE Customer_customerID = '$customerID'";
+					$result = mysqli_query($conn, $query);
+				} elseif(!empty($tripID)){
+					$query = "SELECT * FROM reservation WHERE Trip_tripID = '$tripID'";
 					$result = mysqli_query($conn, $query);
 				}
+				else {
+					echo "Please try one of two , or both."
+				}
+				
 				$all_data = array();
 				while ($data = mysqli_fetch_field($result)) {
 					echo '<td>' . $data->name . '</td>';  //get field name for header
