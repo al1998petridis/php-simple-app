@@ -11,7 +11,7 @@
 			
 			$phone = $_POST["phone"];
 			$age = $_POST["age"];
-			$sql = "INSERT INTO customers (full_name, phone_number, age)
+			$sql = "INSERT INTO customer (full_name, phone_number, age)
 						VALUES ('$fullname', '$phone', '$age')";
 			if (mysqli_query($conn, $sql)){
 				echo "New record created successfully. <br>Redirecting to Customer First Page.";
