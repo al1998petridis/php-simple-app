@@ -109,7 +109,7 @@
 				if (!empty($customerID) && !empty($tripID)){
 					$query = "SELECT * FROM reservation WHERE Trip_tripID = '$tripID' AND Customer_customerID = '$customerID'";	
 					$result = mysqli_query($conn, $query);
-				} elseif (!empty($tripID)){
+				} elseif (!empty($customerID)){
 					$query = "SELECT * FROM reservation WHERE Customer_customerID = '$customerID'";
 					$result = mysqli_query($conn, $query);
 				} elseif(!empty($tripID)){
