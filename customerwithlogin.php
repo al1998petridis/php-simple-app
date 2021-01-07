@@ -44,9 +44,10 @@
 		<div>
 			<form action="customernewReserve.php" method="POST">
 			<p>Complete my profile</p>
-			<input type="text" name="fullname" placeholder="Enter your Full Name" size=15><br/>
-			<input type="text" name="phone" placeholder="Enter phone number" size=15><br/>
-			<input type="text" name="age" placeholder="Enter age" size=15><br/>
+			<input type="text" name="fullname" placeholder="Enter your Full Name" size=25><br/>
+			<input type="text" name="phone" placeholder="Enter phone number" size=20><br/>
+			<input type="text" name="age" placeholder="Enter age" size=10><br/>
+			<button type="submit">Sign Up</submit></button>
 		</div>
 		<div>
 			<a href="customerlogout.php">Log out</a>
