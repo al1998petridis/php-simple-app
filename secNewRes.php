@@ -6,6 +6,9 @@
 	</head>
 	<body>
 		<?php
+			session_start();
+			if(!isset($_SESSION["username"]))
+				header("Location: login.html");
 			include "config.php";
 			$conn -> select_db("heroku_ed39a20fb4d6fd8");
 			
