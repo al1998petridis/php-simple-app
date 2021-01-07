@@ -13,8 +13,10 @@
 			$customerID = $_POST["customerID"];
 			if (!empty($customerID) && !empty($tripID)){
 					$sql = "DELETE FROM reservation WHERE Trip_tripID = '$tripID' AND Customer_customerID = '$customerID'";	
-			else
+			}
+			else{
 				echo "Please fill both customerID and tripID"; 
+			}
 			if (mysqli_query($conn, $sql)){
 				echo "New record deleted successfully. <br>Redirecting to Secretery's Cancel Reservation Page.";
 						?>
