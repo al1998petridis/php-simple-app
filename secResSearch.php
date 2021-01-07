@@ -108,7 +108,8 @@
 				$customerID = $_POST["customerID"];
 				if (isset($customerID)){
 					$query = "SELECT * FROM reservation WHERE Trip_tripID = '$customerID'";	
-				} elseif(isset($tripID)){
+				}
+				if (isset($tripID)){
 					$query = "SELECT * FROM reservation WHERE Customer_customerID = '$tripID'";
 				}
 				$result = mysqli_query($conn, $query);
