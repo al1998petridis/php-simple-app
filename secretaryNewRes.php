@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<link rel="stylesheet" href="styles.css">
+		<title>Secretary's New Reservation Page</title>
+	</head>
+	<style>
+	.topnav{
+		padding:0px;
+		background-color: blue;
+		text-align: center;
+	}
+	
+	.dropbtn {
+		background-color: blue;
+		color: white;
+		padding: 16px;
+		font-size: 16px;
+		border: none;
+	}
+	
+	.dropdown {
+		position: relative;
+		display: inline-block;
+	}
+
+	.dropdown-content {
+		position: absolute;
+		display: none;
+		background-color: blue;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+	}
+
+	.dropdown-content a {
+		color: white;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+	}
+
+	.dropdown-content a:hover {background-color: black;}
+
+	.dropdown:hover .dropdown-content {display: block;}
+
+	.dropbtn:hover {
+		background-color: white;
+		color: blue;
+	}
+	
+	</style>
+	<body>
+		<?php
+			session_start();
+			if(!isset($_SESSION["username"]))
+				header("Location: login.html");		
+		?>
+		<div class="header">
+			<h1>MyBusApp</h1>
+		</div>
+		<div class="topnav">
+			<div class="dropdown">
+				<button class="dropbtn">Reservations</button>
+				<div class="dropdown-content">
+					<a href="#">New Reservation</a>
+					<a href="#">Reservation Search</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn">Customers</button>
+				<div class="dropdown-content">
+					<a href="#">New Customer Registration</a>
+					<a href="#">Customer Search</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn">Destinations</button>
+				<div class="dropdown-content">
+					<a href="#">New Destination Registration</a>
+					<a href="#">Destination Search</a>
+					<a href="#">View Destinations</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn">Trip</button>
+				<div class="dropdown-content">
+					<a href="#">Create new Trip</a>
+					<a href="#">Search Trips</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn">Drivers</button>
+				<div class="dropdown-content">
+					<a href="#">Add new Driver</a>
+					<a href="#">Driver Search</a>
+				</div>
+			</div>
+		</div>
+		<div>
+			<p>Create New Reservation</p>
+			<form action="secNewRes.php" method="POST">
+				<input type="text" name="tripID" placeholder="Enter tripID" size=5><br/>
+				<input type="text" name="customerID" placeholder="Enter customerID" size=5><br/>
+				<input type="text" name="price" placeholder="Enter price" size=5><br/>
+				<input type="text" name="seat_num" placeholder="Enter seat number" size=5><br/>
+			</form>
+		</div>
+	</body>
+	
+</html>
