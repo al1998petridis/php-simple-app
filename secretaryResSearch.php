@@ -105,7 +105,7 @@
 				<p>Search with TripID</p>
 				<input type="text" name="tripID" placeholder="Enter tripID" size=10><br/>
 				<p>Search with CustomerID</p>
-				<input type="text" name="customerID" placeholder="Enter customerID" size=10><br/>
+				<input type="text" name="customerID" placeholder="Enter customerID" size=20><br/>
 				<button type="submit">Search Reservation</submit></button>
 			</form>
 		</div>
