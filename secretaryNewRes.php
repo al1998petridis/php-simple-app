@@ -65,7 +65,7 @@
 				<button class="dropbtn">Reservations</button>
 				<div class="dropdown-content">
 					<a href="secretaryNewRes.php">New Reservation</a>
-					<a href="#">Reservation Search</a>
+					<a href="secretaryResSearch.php">Reservation Search</a>
 					<a href="#">Cancel Reservation</a>
 				</div>
 			</div>
