@@ -42,7 +42,11 @@
 			<h2>I want to travel with Busdb</h2>
 		</div>
 		<div>
-			<p>Here is the field for creating a new reservation for himself</p>
+			<form action="customernewReserve.php" method="POST">
+			<p>Complete my profile</p>
+			<input type="text" name="fullname" placeholder="Enter your Full Name" size=15><br/>
+			<input type="text" name="phone" placeholder="Enter phone number" size=15><br/>
+			<input type="text" name="age" placeholder="Enter age" size=15><br/>
 		</div>
 		<div>
 			<a href="customerlogout.php">Log out</a>
