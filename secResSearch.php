@@ -106,11 +106,11 @@
 				$conn -> select_db("heroku_ed39a20fb4d6fd8");
 				$tripID = $_POST["tripID"];
 				$customerID = $_POST["customerID"];
-				if (isset($customerID)){
+				if (isset($customerID) && !isset($tripID)){
 					$query = "SELECT * FROM reservation WHERE Trip_tripID = '$customerID'";	
 					$result = mysqli_query($conn, $query);
 				}
-				if (isset($tripID)){
+				if (isset($tripID) && !isset($customerID)){
 					$query = "SELECT * FROM reservation WHERE Customer_customerID = '$tripID'";
 					$result = mysqli_query($conn, $query);
 				}
