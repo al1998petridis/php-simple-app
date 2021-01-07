@@ -65,7 +65,7 @@
 				<button class="dropbtn">Reservations</button>
 				<div class="dropdown-content">
 					<a href="secretaryNewRes.php">New Reservation</a>
-					<a href="#">Reservation Search</a>
+					<a href="secretaryResSearch.php">Reservation Search</a>
 					<a href="#">Cancel Reservation</a>
 				</div>
 			</div>
@@ -100,14 +100,34 @@
 			</div>
 		</div>
 		<div>
-			<p>Create New Reservation</p>
-			<form action="secNewRes.php" method="POST">
-				<input type="text" name="tripID" placeholder="Enter tripID" size=10><br/>
-				<input type="text" name="customerID" placeholder="Enter customerID" size=10><br/>
-				<input type="text" name="price" placeholder="Enter price" size=10><br/>
-				<input type="text" name="seat_num" placeholder="Enter seat number" size=10><br/>
-				<button type="submit">Submit Reservation</submit></button>
-			</form>
+			<p>Search Results</p>
+			<table><?php
+				include "config.php";
+				$conn -> select_db("heroku_ed39a20fb4d6fd8");
+				$tripID = $_POST["tripID"];
+				$customerID = $_POST["customerID"];
+				if (isset($tripID))
+					$query = "SELECT * FROM reservation WHERE Trip_tripID = '$tripID'";	
+				else if(isset($customerID))
+					$query = "SELECT * FROM reservation WHERE Customer_customerID = '$customerID'";
+				$result = mysqli_query($conn, $query);
+				$all_data = array();
+				while ($data = mysqli_fetch_field($result)) {
+					echo '<td>' . $data->name . '</td>';  //get field name for header
+					array_push($all_data, $data->name);  //save those to array
+				}
+				echo '</tr>'; //end tr tag
+
+				//showing all data
+				while ($row = mysqli_fetch_array($result)) {
+					echo "<tr>";
+					foreach ($all_data as $item) {
+						echo '<td>' . $row[$item] . '</td>'; //get items using data value
+					}
+					echo '</tr>';
+				}
+				echo "</table>";				
+			?></table>
 		</div>
 		<div>
 			<a href="logout.php">Log out</a>

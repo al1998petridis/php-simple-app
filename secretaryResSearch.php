@@ -65,7 +65,7 @@
 				<button class="dropbtn">Reservations</button>
 				<div class="dropdown-content">
 					<a href="secretaryNewRes.php">New Reservation</a>
-					<a href="#">Reservation Search</a>
+					<a href="secretaryResSearch.php">Reservation Search</a>
 					<a href="#">Cancel Reservation</a>
 				</div>
 			</div>
@@ -100,13 +100,13 @@
 			</div>
 		</div>
 		<div>
-			<p>Create New Reservation</p>
-			<form action="secNewRes.php" method="POST">
+			<p>Search Reservation</p>
+			<form action="secResSearch.php" method="POST">
+				<p>Search with TripID</p>
 				<input type="text" name="tripID" placeholder="Enter tripID" size=10><br/>
+				<p>Search with CustomerID</p>
 				<input type="text" name="customerID" placeholder="Enter customerID" size=10><br/>
-				<input type="text" name="price" placeholder="Enter price" size=10><br/>
-				<input type="text" name="seat_num" placeholder="Enter seat number" size=10><br/>
-				<button type="submit">Submit Reservation</submit></button>
+				<button type="submit">Search Reservation</submit></button>
 			</form>
 		</div>
 		<div>

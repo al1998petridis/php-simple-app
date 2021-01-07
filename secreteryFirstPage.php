@@ -107,7 +107,7 @@
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav('ResNav')">&times;</a>
 			<div class="overlay-content">
 				<a href="secretaryNewRes.php">New Reservation</a>
-				<a href="#">Reservation Search</a>
+				<a href="secretaryResSearch.php">Reservation Search</a>
 				<a href="#">Cancel Reservation</a>
 			</div>
 		</div>
