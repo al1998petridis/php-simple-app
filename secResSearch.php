@@ -115,9 +115,8 @@
 				} elseif(!empty($tripID)){
 					$query = "SELECT * FROM reservation WHERE Trip_tripID = '$tripID'";
 					$result = mysqli_query($conn, $query);
-				}
-				else {
-					echo "Please try one of two , or both."
+				}else {
+					echo "Please try one of two , or both.";
 				}
 				
 				$all_data = array();
