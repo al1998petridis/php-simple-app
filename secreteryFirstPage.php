@@ -108,7 +108,7 @@
 			<div class="overlay-content">
 				<a href="secretaryNewRes.php">New Reservation</a>
 				<a href="secretaryResSearch.php">Reservation Search</a>
-				<a href="#">Cancel Reservation</a>
+				<a href="secretaryCancelRes.php">Cancel Reservation</a>
 			</div>
 		</div>
 		<div id="CusNav" class="overlay">

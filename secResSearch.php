@@ -2,7 +2,7 @@
 <html>
 	<head>	
 		<link rel="stylesheet" href="styles.css">
-		<title>Secretary's New Reservation Page</title>
+		<title>Secretary's Search Reservation Page</title>
 	</head>
 	<style>
 	.topnav{
@@ -66,7 +66,7 @@
 				<div class="dropdown-content">
 					<a href="secretaryNewRes.php">New Reservation</a>
 					<a href="secretaryResSearch.php">Reservation Search</a>
-					<a href="#">Cancel Reservation</a>
+					<a href="secretaryCancelRes.php">Cancel Reservation</a>
 				</div>
 			</div>
 			<div class="dropdown">

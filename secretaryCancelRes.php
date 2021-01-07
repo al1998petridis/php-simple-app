@@ -2,7 +2,7 @@
 <html>
 	<head>	
 		<link rel="stylesheet" href="styles.css">
-		<title>Secretary's New Reservation Page</title>
+		<title>Secretary's Cancel Reservation Page</title>
 	</head>
 	<style>
 	.topnav{
@@ -100,13 +100,13 @@
 			</div>
 		</div>
 		<div>
-			<p>Search Reservation</p>
-			<form action="secResSearch.php" method="POST">
-				<p>Search with TripID</p>
+			<p>Cancel Reservation</p>
+			<form action="secCanRes.php" method="POST">
+				<p>Cancel with TripID</p>
 				<input type="text" name="tripID" placeholder="Enter tripID" size=10><br/>
-				<p>Search with CustomerID</p>
+				<p>Cancel with CustomerID</p>
 				<input type="text" name="customerID" placeholder="Enter customerID" size=20><br/>
-				<button type="submit">Search Reservation</submit></button>
+				<button type="submit">Cancel Reservation</submit></button>
 			</form>
 		</div>
 		<div>
