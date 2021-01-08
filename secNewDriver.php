@@ -19,7 +19,7 @@
 			$contractduration = $_POST["contractduration"];
 			$officeID = $_POST["officeID"];
 			$carlicense = $_POST["carlicense"];
-			$employeeID = "SELECT employeeID FROM Employee WHERE employeeID = (SELECT max(employeeID) FROM Employee)";
+			$employeeID = "SELECT employeeID FROM Employee WHERE employeeID = (SELECT max((employeeID)+1) FROM Employee)";
 			
 			if(!empty($fullname) && !empty($age) && !empty($phone) && !empty($salary) && !empty($contractduration)
 			&& !empty($officeID) && !empty($carlicense) && !empty($employeeID)){
