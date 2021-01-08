@@ -79,7 +79,7 @@
 			<div class="dropdown">
 				<button class="dropbtn">Destinations</button>
 				<div class="dropdown-content">
-					<a href="#">New Destination Registration</a>
+					<a href="secretaryNewDest.php">New Destination Registration</a>
 					<a href="#">Destination Search</a>
 					<a href="#">View Destinations</a>
 				</div>
