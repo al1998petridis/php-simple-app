@@ -1,4 +1,4 @@
-App at busdb.herokuapp.com
+App at https://busdb.herokuapp.com/
 
 My first app in php for a school project on databases.
 The app is for organizing travel business trips.
