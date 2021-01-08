@@ -2,7 +2,7 @@
 <html>
 	<head>	
 		<link rel="stylesheet" href="styles.css">
-		<title>Secretary's Search Customer Page</title>
+		<title>Secretary's New Trip Page</title>
 	</head>
 	<style>
 	.topnav{
@@ -100,15 +100,14 @@
 			</div>
 		</div>
 		<div>
-			<p>Search Customer</p>
-			<form action="secCustSearch.php" method="POST">
-				<p>Search with Full Name</p>
-				<input type="text" name="fullname" placeholder="Enter Full name" size=20><br/>
-				<p>Search with Phone</p>
-				<input type="text" name="phone" placeholder="Enter phone" size=10><br/>
-				<p>Search with CustomerID</p>
-				<input type="text" name="customerID" placeholder="Enter customerID" size=15><br/>
-				<button type="submit">Search Customer</submit></button>
+			<p>Create New Trip</p>
+			<form action="secNewTrip.php" method="POST">
+				<input type="date" name="dateofdeparture" placeholder="Enter date of departure" size=10><br/>
+				<input type="time" name="timeofdeparture" placeholder="Enter time of departure" size=20><br/>
+				<input type="date" name="dateofreturn" placeholder="Enter date of return" size=10><br/>
+				<input type="time" name="timeofreturn" placeholder="Enter time of return" size=20><br/>
+				<input type="text" name="secretaryID" placeholder="Enter your secretary ID" size=20><br/>
+				<button type="submit">Submit Reservation</submit></button>
 			</form>
 		</div>
 		<div>
