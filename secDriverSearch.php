@@ -105,7 +105,7 @@
 				include "config.php";
 				$conn -> select_db("heroku_ed39a20fb4d6fd8");
 				$drivername = $_POST["drivername"];
-				if (!empty($drivername) && !empty($cityname)){
+				if (!empty($drivername)){
 					$query = "SELECT * FROM Employee 
 								JOIN Driver ON Driver.Employee_employeeID = Employee.employeeID
 								WHERE city_name = '$drivername' AND Driver.driverID LIKE '%'";	
