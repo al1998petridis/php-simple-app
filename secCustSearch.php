@@ -107,16 +107,16 @@
 				$fullname = $_POST["fullname"];
 				$phone = $_POST["phone"];
 				$customerID = $_POST["customerID"];
-				if (!empty($customerID) && !empty($fullname) !empty($phone)){
+				if (!empty($customerID) && !empty($fullname) && !empty($phone)){
 					$query = "SELECT * FROM Customer WHERE customerID = '$customerID' AND full_name = '$fullname' AND phone_number = '$phone'";	
 					$result = mysqli_query($conn, $query);
-				} elseif (!empty($customerID)&& !empty($fullname)){
+				} elseif (!empty($customerID) && !empty($fullname)){
 					$query = "SELECT * FROM Customer WHERE customerID = '$customerID' AND full_name = '$fullname'";
 					$result = mysqli_query($conn, $query);
-				} elseif(!empty($customerID)&& !empty($phone)){
+				} elseif(!empty($customerID) && !empty($phone)){
 					$query = "SELECT * FROM Customer WHERE customerID = '$customerID' AND phone_number = '$phone'";
 					$result = mysqli_query($conn, $query);
-				} elseif(!empty($fullname)&& !empty($phone)){
+				} elseif(!empty($fullname) && !empty($phone)){
 					$query = "SELECT * FROM Customer WHERE full_name = '$fullname' AND phone_number = '$phone'";
 					$result = mysqli_query($conn, $query);
 				} elseif(!empty($customerID)){
