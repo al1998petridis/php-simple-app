@@ -42,8 +42,9 @@
 			<h2>I want to travel with Busdb</h2>
 		</div>
 		<div>
+			<form action="customernewReserve.php">
 			<p>I want to complete my profile<p>
-			<button href="customerwithlogin.php">Complete my profile</button>
+			<button>Complete my profile</button>
 		</div>
 		
 		<div>
