@@ -130,7 +130,7 @@
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav('TrNav')">&times;</a>
 			<div class="overlay-content">
 				<a href="secretaryNewTrip.php">Create new Trip</a>
-				<a href="#">Search Trips</a>
+				<a href="secretarySearchTrips.php">Search Trips</a>
 			</div>
 		</div>
 		<div id="DrNav" class="overlay">

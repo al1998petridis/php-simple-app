@@ -2,7 +2,7 @@
 <html>
 	<head>	
 		<link rel="stylesheet" href="styles.css">
-		<title>Secretary's Search Customer Page</title>
+		<title>Secretary's Search Trip Page</title>
 	</head>
 	<style>
 	.topnav{
@@ -100,16 +100,54 @@
 			</div>
 		</div>
 		<div>
-			<p>Search Customer</p>
-			<form action="secCustSearch.php" method="POST">
-				<p>Search with Full Name</p>
-				<input type="text" name="fullname" placeholder="Enter Full name" size=20><br/>
-				<p>Search with Phone</p>
-				<input type="text" name="phone" placeholder="Enter phone" size=10><br/>
-				<p>Search with CustomerID</p>
-				<input type="text" name="customerID" placeholder="Enter customerID" size=15><br/>
-				<button type="submit">Search Customer</submit></button>
-			</form>
+			<p>Search Results</p>
+			<table><?php
+				include "config.php";
+				$conn -> select_db("heroku_ed39a20fb4d6fd8");
+				$cityname = $_POST["cityname"];
+				$countryname = $_POST["countryname"];
+				if (!empty($countryname) && !empty($cityname)){
+					$query = "SELECT date_of_departure, time_of_departure, date_of_return, time_of_return, Destination.city_name, Destination.country_name
+								FROM Trip 
+								JOIN includes ON Trip.tripID = includes.Trip_tripID
+								JOIN Destination ON Destination.destinationID = includes.Destination_destinationID
+								WHERE city_name = '$cityname' AND country_name = '$countryname'";	
+					$result = mysqli_query($conn, $query);
+				} elseif (!empty($countryname)){
+					$query = "SELECT date_of_departure, time_of_departure, date_of_return, time_of_return, Destination.city_name, Destination.country_name
+								FROM Trip 
+								JOIN includes ON Trip.tripID = includes.Trip_tripID
+								JOIN Destination ON Destination.destinationID = includes.Destination_destinationID
+								WHERE country_name = '$countryname'";
+					$result = mysqli_query($conn, $query);
+				} elseif(!empty($cityname)){
+					$query = "SELECT date_of_departure, time_of_departure, date_of_return, time_of_return, Destination.city_name, Destination.country_name
+								FROM Trip 
+								JOIN includes ON Trip.tripID = includes.Trip_tripID
+								JOIN Destination ON Destination.destinationID = includes.Destination_destinationID
+								WHERE city_name = '$cityname'";
+					$result = mysqli_query($conn, $query);
+				}else {
+					echo "Please try one of two , or both.";
+				}
+				
+				$all_data = array();
+				while ($data = mysqli_fetch_field($result)) {
+					echo '<td>' . $data->name . '</td>';  //get field name for header
+					array_push($all_data, $data->name);  //save those to array
+				}
+				echo '</tr>'; //end tr tag
+
+				//showing all data
+				while ($row = mysqli_fetch_array($result)) {
+					echo "<tr>";
+					foreach ($all_data as $item) {
+						echo '<td>' . $row[$item] . '</td>'; //get items using data value
+					}
+					echo '</tr>';
+				}
+				echo "</table>";				
+			?></table>
 		</div>
 		<div>
 			<a href="logout.php">Log out</a>

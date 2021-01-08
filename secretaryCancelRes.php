@@ -88,7 +88,7 @@
 				<button class="dropbtn">Trip</button>
 				<div class="dropdown-content">
 					<a href="secretaryNewTrip.php">Create new Trip</a>
-					<a href="#">Search Trips</a>
+					<a href="secretarySearchTrips.php">Search Trips</a>
 				</div>
 			</div>
 			<div class="dropdown">
