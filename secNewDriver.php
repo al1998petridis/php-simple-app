@@ -19,14 +19,16 @@
 			$contractduration = $_POST["contractduration"];
 			$officeID = $_POST["officeID"];
 			$carlicense = $_POST["carlicense"];
-			$employeeID = "SELECT employeeID FROM Employee WHERE employeeID = (SELECT max((employeeID)+1) FROM Employee)";
+			$employeeID = "SELECT employeeID FROM Employee WHERE employeeID = (SELECT max((employeeID)) FROM Employee)";
 			
 			if(!empty($fullname) && !empty($age) && !empty($phone) && !empty($salary) && !empty($contractduration)
 			&& !empty($officeID) && !empty($carlicense) && !empty($employeeID)){
 				$sql = "INSERT INTO Employee(full_name, age, phone, salary, contract_duration, Office_officeID)
 							VALUES ('$fullname', '$age', '$phone', '$salary', '$contractduration', '$officeID')";
-				$sql2 = "INSERT INTO Driver(car_license_ID, Employee_employeeID)
-							VALUES ('$carlicense', '$employeeID')";
+				if (mysqli_query($conn, $employeeID)){
+					$sql2 = "INSERT INTO Driver(car_license_ID, Employee_employeeID)
+								VALUES ('$carlicense', '$employeeID')";
+				}
 				if (mysqli_query($conn, $sql) && mysqli_query($conn, $sql2)){
 					echo "New record created successfully. <br>Redirecting to Secretery's new Driver Page.";
 							?>
