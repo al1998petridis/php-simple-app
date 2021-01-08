@@ -102,10 +102,9 @@
 		<div>
 			<p>Register New Customer</p>
 			<form action="secNewCust.php" method="POST">
-				<input type="text" name="customerID" placeholder="Enter customerID" size=10><br/>
 				<input type="text" name="fullname" placeholder="Enter full name" size=20><br/>
 				<input type="text" name="phone" placeholder="Enter phone" size=10><br/>
-				<input type="text" name="age" placeholder="Enter age" size=20><br/>
+				<input type="text" name="age" placeholder="Enter age" size=5><br/>
 				<button type="submit">Submit Reservation</submit></button>
 			</form>
 		</div>
