@@ -95,13 +95,13 @@
 				<button class="dropbtn">Drivers</button>
 				<div class="dropdown-content">
 					<a href="secretaryNewDriver.php">Add new Driver</a>
-					<a href="#">Driver Search</a>
+					<a href="secretaryDriverSearch.php">Driver Search</a>
 				</div>
 			</div>
 		</div>
 		<div>
 			<p>Create New Driver</p>
-			<form action="secNewTrip.php" method="POST">
+			<form action="secNewDriver.php" method="POST">
 				<input type="text" name="fullname" placeholder="Enter Full Name" size=20><br/>
 				<input type="text" name="age" placeholder="Enter age" size=10><br/>
 				<input type="text" name="phone" placeholder="Enter phone number" size=20><br/>
