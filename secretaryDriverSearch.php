@@ -101,7 +101,7 @@
 		</div>
 		<div>
 			<p>Search Driver</p>
-			<form action="secDesSearch.php" method="POST">
+			<form action="secDriverSearch.php" method="POST">
 				<p>Search with Driver Name</p>
 				<input type="text" name="drivername" placeholder="Enter City Name" size=20><br/>
 				<button type="submit">Search Driver</submit></button>
