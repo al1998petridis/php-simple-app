@@ -108,7 +108,7 @@
 				if (!empty($drivername)){
 					$query = "SELECT * FROM Employee 
 								JOIN Driver ON Driver.Employee_employeeID = Employee.employeeID
-								WHERE city_name = '$drivername' AND Driver.driverID LIKE '%'";	
+								WHERE full_name = '$drivername' AND Driver.driverID LIKE '%'";	
 					$result = mysqli_query($conn, $query);
 				}else {
 					echo "Please fill the field.";
