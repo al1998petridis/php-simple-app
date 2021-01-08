@@ -107,13 +107,13 @@
 				$cityname = $_POST["cityname"];
 				$countryname = $_POST["countryname"];
 				if (!empty($countryname) && !empty($cityname)){
-					$query = "SELECT * FROM destination WHERE Trip_tripID = '$cityname' AND Customer_customerID = '$countryname'";	
+					$query = "SELECT * FROM destination WHERE city_name = '$cityname' AND country_name = '$countryname'";	
 					$result = mysqli_query($conn, $query);
 				} elseif (!empty($countryname)){
-					$query = "SELECT * FROM destination WHERE Customer_customerID = '$countryname'";
+					$query = "SELECT * FROM destination WHERE country_name = '$countryname'";
 					$result = mysqli_query($conn, $query);
 				} elseif(!empty($cityname)){
-					$query = "SELECT * FROM destination WHERE Trip_tripID = '$cityname'";
+					$query = "SELECT * FROM destination WHERE city_name = '$cityname'";
 					$result = mysqli_query($conn, $query);
 				}else {
 					echo "Please try one of two , or both.";
