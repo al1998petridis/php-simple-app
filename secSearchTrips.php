@@ -107,21 +107,21 @@
 				$cityname = $_POST["cityname"];
 				$countryname = $_POST["countryname"];
 				if (!empty($countryname) && !empty($cityname)){
-					$query = "SELECT date_of_departure, time_of_departure, date_of_return, time_of_return, Destination.city_name, Destination.country_name
+					$query = "SELECT tripID, date_of_departure, time_of_departure, date_of_return, time_of_return, Destination.city_name, Destination.country_name
 								FROM Trip 
 								JOIN includes ON Trip.tripID = includes.Trip_tripID
 								JOIN Destination ON Destination.destinationID = includes.Destination_destinationID
 								WHERE city_name = '$cityname' AND country_name = '$countryname'";	
 					$result = mysqli_query($conn, $query);
 				} elseif (!empty($countryname)){
-					$query = "SELECT date_of_departure, time_of_departure, date_of_return, time_of_return, Destination.city_name, Destination.country_name
+					$query = "SELECT tripID, date_of_departure, time_of_departure, date_of_return, time_of_return, Destination.city_name, Destination.country_name
 								FROM Trip 
 								JOIN includes ON Trip.tripID = includes.Trip_tripID
 								JOIN Destination ON Destination.destinationID = includes.Destination_destinationID
 								WHERE country_name = '$countryname'";
 					$result = mysqli_query($conn, $query);
 				} elseif(!empty($cityname)){
-					$query = "SELECT date_of_departure, time_of_departure, date_of_return, time_of_return, Destination.city_name, Destination.country_name
+					$query = "SELECT tripID, date_of_departure, time_of_departure, date_of_return, time_of_return, Destination.city_name, Destination.country_name
 								FROM Trip 
 								JOIN includes ON Trip.tripID = includes.Trip_tripID
 								JOIN Destination ON Destination.destinationID = includes.Destination_destinationID
