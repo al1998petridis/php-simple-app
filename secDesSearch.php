@@ -2,7 +2,7 @@
 <html>
 	<head>	
 		<link rel="stylesheet" href="styles.css">
-		<title>Secretary's Search Customer Page</title>
+		<title>Secretary's Search Destinations Page</title>
 	</head>
 	<style>
 	.topnav{
@@ -104,32 +104,19 @@
 			<table><?php
 				include "config.php";
 				$conn -> select_db("heroku_ed39a20fb4d6fd8");
-				$fullname = $_POST["fullname"];
-				$phone = $_POST["phone"];
-				$customerID = $_POST["customerID"];
-				if (!empty($customerID) && !empty($fullname) && !empty($phone)){
-					$query = "SELECT * FROM Customer WHERE customerID = '$customerID' AND full_name = '$fullname' AND phone_number = '$phone'";	
+				$cityname = $_POST["cityname"];
+				$countryname = $_POST["countryname"];
+				if (!empty($countryname) && !empty($cityname)){
+					$query = "SELECT * FROM destination WHERE Trip_tripID = '$cityname' AND Customer_customerID = '$countryname'";	
 					$result = mysqli_query($conn, $query);
-				} elseif (!empty($customerID) && !empty($fullname)){
-					$query = "SELECT * FROM Customer WHERE customerID = '$customerID' AND full_name = '$fullname'";
+				} elseif (!empty($countryname)){
+					$query = "SELECT * FROM destination WHERE Customer_customerID = '$countryname'";
 					$result = mysqli_query($conn, $query);
-				} elseif(!empty($customerID) && !empty($phone)){
-					$query = "SELECT * FROM Customer WHERE customerID = '$customerID' AND phone_number = '$phone'";
+				} elseif(!empty($cityname)){
+					$query = "SELECT * FROM destination WHERE Trip_tripID = '$cityname'";
 					$result = mysqli_query($conn, $query);
-				} elseif(!empty($fullname) && !empty($phone)){
-					$query = "SELECT * FROM Customer WHERE full_name = '$fullname' AND phone_number = '$phone'";
-					$result = mysqli_query($conn, $query);
-				} elseif(!empty($customerID)){
-					$query = "SELECT * FROM Customer WHERE customerID = '$customerID'";
-					$result = mysqli_query($conn, $query);
-				} elseif(!empty($phone)){
-					$query = "SELECT * FROM Customer WHERE phone_number = '$phone'";
-					$result = mysqli_query($conn, $query);
-				} elseif(!empty($fullname)){
-					$query = "SELECT * FROM Customer WHERE full_name = '$fullname'";
-					$result = mysqli_query($conn, $query);
-				} else {
-					echo "Please fill one, two , or all the fields.";
+				}else {
+					echo "Please try one of two , or both.";
 				}
 				
 				$all_data = array();

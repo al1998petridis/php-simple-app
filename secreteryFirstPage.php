@@ -122,7 +122,7 @@
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav('DesNav')">&times;</a>
 			<div class="overlay-content">
 				<a href="secretaryNewDest.php">New Destination Registration</a>
-				<a href="#">Destination Search</a>
+				<a href="secretaryDesSearch.php">Destination Search</a>
 				<a href="#">View Destinations</a>
 			</div>
 		</div>
