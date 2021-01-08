@@ -27,7 +27,7 @@
 							VALUES ('$fullname', '$age', '$phone', '$salary', '$contractduration', '$officeID')";
 				$sql2 = "INSERT INTO Driver(car_license_ID, Employee_employeeID)
 							VALUES ('$carlicense', '$employeeID')";
-				if (mysqli_query($conn, $sql)){
+				if (mysqli_query($conn, $sql) && mysqli_query($conn, $sql2)){
 					echo "New record created successfully. <br>Redirecting to Secretery's new Driver Page.";
 							?>
 							<script>
