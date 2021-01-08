@@ -72,7 +72,7 @@
 			<div class="dropdown">
 				<button class="dropbtn">Customers</button>
 				<div class="dropdown-content">
-					<a href="#">New Customer Registration</a>
+					<a href="secretaryNewCust.php">New Customer Registration</a>
 					<a href="#">Customer Search</a>
 				</div>
 			</div>

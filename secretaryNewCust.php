@@ -2,7 +2,7 @@
 <html>
 	<head>	
 		<link rel="stylesheet" href="styles.css">
-		<title>Secretary's New Reservation Page</title>
+		<title>Secretary's New Customer Registration Page</title>
 	</head>
 	<style>
 	.topnav{
@@ -100,12 +100,12 @@
 			</div>
 		</div>
 		<div>
-			<p>Create New Reservation</p>
-			<form action="secNewRes.php" method="POST">
-				<input type="text" name="tripID" placeholder="Enter tripID" size=10><br/>
-				<input type="text" name="customerID" placeholder="Enter customerID" size=20><br/>
-				<input type="text" name="price" placeholder="Enter price" size=10><br/>
-				<input type="text" name="seat_num" placeholder="Enter seat number" size=20><br/>
+			<p>Register New Customer</p>
+			<form action="secNewCust.php" method="POST">
+				<input type="text" name="customerID" placeholder="Enter customerID" size=10><br/>
+				<input type="text" name="fullname" placeholder="Enter full name" size=20><br/>
+				<input type="text" name="phone" placeholder="Enter phone" size=10><br/>
+				<input type="text" name="age" placeholder="Enter age" size=20><br/>
 				<button type="submit">Submit Reservation</submit></button>
 			</form>
 		</div>
