@@ -101,7 +101,7 @@
 		</div>
 		<div>
 			<p>Create New Destination</p>
-			<form action="secNewDest.php" method="POST">
+			<form action="secNewDes.php" method="POST">
 				<input type="text" name="cityname" placeholder="Enter City Name" size=20><br/>
 				<input type="text" name="countryname" placeholder="Enter Country Name" size=20><br/>
 				<button type="submit">Submit Destination</submit></button>
