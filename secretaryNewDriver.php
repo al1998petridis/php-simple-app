@@ -109,7 +109,6 @@
 				<input type="text" name="contractduration" placeholder="Enter contract Duration" size=20><br/>
 				<input type="text" name="officeID" placeholder="Enter officeID" size=20><br/>
 				<input type="text" name="carlicense" placeholder="Enter car license" size=15><br/>
-				<input type="text" name="employeeID" placeholder="Enter employeeID" size=10><br/>
 				<button type="submit">Submit Driver</submit></button>
 			</form>
 		</div>
