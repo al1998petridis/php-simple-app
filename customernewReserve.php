@@ -8,7 +8,7 @@
 		<?php
 			include "config.php";
 			$conn -> select_db("heroku_ed39a20fb4d6fd8");
-			
+			$fullname = $_POST["fullname"];
 			$phone = $_POST["phone"];
 			$age = $_POST["age"];
 			$sql = "INSERT INTO customer (full_name, phone_number, age)
