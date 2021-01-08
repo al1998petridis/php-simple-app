@@ -38,7 +38,7 @@
 					<?php
 					}
 			} else{
-				echo "Please fill all fields";
+				echo "Please fill all fields. <br>Redirecting to Secretery's new Customer Registration Page.";
 					?>
 					<script>
 						setTimeout(function() {

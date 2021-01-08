@@ -115,7 +115,7 @@
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav('CusNav')">&times;</a>
 			<div class="overlay-content">
 				<a href="secretaryNewCust.php">New Customer Registration</a>
-				<a href="#">Customer Search</a>
+				<a href="secretaryCustSearch.php">Customer Search</a>
 			</div>
 		</div>
 		<div id="DesNav" class="overlay">
