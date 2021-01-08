@@ -39,6 +39,13 @@
 					}
 			} else{
 				echo "Please fill all fields";
+					?>
+					<script>
+						setTimeout(function() {
+							window.location.href="secretaryNewCust.php";
+						}, 3000);
+					</script> 	
+					<?php
 			}
 
 			

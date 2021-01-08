@@ -40,6 +40,13 @@
 					}
 			}else{
 				echo "Please fill all fields";
+					?>
+					<script>
+						setTimeout(function() {
+							window.location.href="secretaryNewRes.php";
+						}, 3000);
+					</script> 	
+					<?php
 			}
 		?>
 	</body>
