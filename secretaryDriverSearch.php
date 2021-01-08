@@ -2,7 +2,7 @@
 <html>
 	<head>	
 		<link rel="stylesheet" href="styles.css">
-		<title>Secretary's Search Customer Page</title>
+		<title>Secretary's Search Driver Page</title>
 	</head>
 	<style>
 	.topnav{
@@ -100,15 +100,11 @@
 			</div>
 		</div>
 		<div>
-			<p>Search Customer</p>
-			<form action="secCustSearch.php" method="POST">
-				<p>Search with Full Name</p>
-				<input type="text" name="fullname" placeholder="Enter Full name" size=20><br/>
-				<p>Search with Phone</p>
-				<input type="text" name="phone" placeholder="Enter phone" size=10><br/>
-				<p>Search with CustomerID</p>
-				<input type="text" name="customerID" placeholder="Enter customerID" size=15><br/>
-				<button type="submit">Search Customer</submit></button>
+			<p>Search Driver</p>
+			<form action="secDesSearch.php" method="POST">
+				<p>Search with Driver Name</p>
+				<input type="text" name="drivername" placeholder="Enter City Name" size=20><br/>
+				<button type="submit">Search Driver</submit></button>
 			</form>
 		</div>
 		<div>

@@ -95,7 +95,7 @@
 				<button class="dropbtn">Drivers</button>
 				<div class="dropdown-content">
 					<a href="secretaryNewDriver.php">Add new Driver</a>
-					<a href="#">Driver Search</a>
+					<a href="secretaryDriverSearch.php">Driver Search</a>
 				</div>
 			</div>
 		</div>

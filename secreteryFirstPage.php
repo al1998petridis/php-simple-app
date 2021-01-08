@@ -137,7 +137,7 @@
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav('DrNav')">&times;</a>
 			<div class="overlay-content">
 				<a href="secretaryNewDriver.php">Add new Driver</a>
-				<a href="#">Driver Search</a>
+				<a href="secretaryDriverSearch.php">Driver Search</a>
 			</div>
 		</div>
 		<div class="header">
