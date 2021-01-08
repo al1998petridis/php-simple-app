@@ -123,7 +123,7 @@
 			<div class="overlay-content">
 				<a href="secretaryNewDest.php">New Destination Registration</a>
 				<a href="secretaryDesSearch.php">Destination Search</a>
-				<a href="#">View Destinations</a>
+				<a href="secretaryViewDest.php">View Destinations</a>
 			</div>
 		</div>
 		<div id="TrNav" class="overlay">
