@@ -38,7 +38,7 @@
 		?>
  		<script>
 			setTimeout(function() {
-				window.location.href="customerwithlogin.php";
+				window.location.href="customerwithlogin2.php";
 			}, 3000);
 		</script> 
 		<?php

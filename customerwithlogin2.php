@@ -42,6 +42,11 @@
 			<h2>I want to travel with Busdb</h2>
 		</div>
 		<div>
+			<p>I want to complete my profile<p>
+			<button href="customerwithlogin.php">Complete my profile</button>
+		</div>
+		
+		<div>
 			<a href="customerlogout.php">Log out</a>
 		</div>
 	</body>
