@@ -15,7 +15,7 @@
 			$fullname = $_POST["fullname"];
 			$phone = $_POST["phone"];
 			$age = $_POST["age"];
-			if(!empty($full_name) && !empty($phone) && !empty($age)){
+			if(!empty($fullname) && !empty($phone) && !empty($age)){
 				$sql = "INSERT INTO Customer(full_name, phone_number, age)
 							VALUES ('$fullname', '$phone', '$age')";
 				if (mysqli_query($conn, $sql)){
