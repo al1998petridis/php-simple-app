@@ -104,7 +104,7 @@
 			<table><?php
 				include "config.php";
 				$conn -> select_db("heroku_ed39a20fb4d6fd8");
-				$query = "SELECT * FROM destination";
+				$query = "SELECT city_name, country_name FROM destination";
 				$result = mysqli_query($conn, $query);
 				$all_data = array();
 				while ($data = mysqli_fetch_field($result)) {
